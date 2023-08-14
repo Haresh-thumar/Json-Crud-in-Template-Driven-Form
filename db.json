@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Users": [
+    {
+      "firstname": "Test",
+      "lastname": "test1",
+      "city": "safasfd",
+      "pincode": "wer",
+      "mobileNo": "9876543210",
+      "id": 1
+    },
+    {
+      "firstname": "bhdbd",
+      "lastname": "zfbdfbfd",
+      "city": "brdbfd",
+      "pincode": "bdrbzrd",
+      "mobileNo": "dfbf",
+      "id": 2
+    },
+    {
+      "firstname": "ndff",
+      "lastname": "bfbfb",
+      "city": "fdbdfbfd",
+      "pincode": "bndf",
+      "mobileNo": "gfdbdfb",
+      "id": 3
+    },
+    {
+      "firstname": "tdykyg",
+      "lastname": "gkykykg",
+      "city": "ykghkk",
+      "pincode": "ykykyk",
+      "mobileNo": "kghkgh",
+      "id": 4
+    },
+    {
+      "firstname": "cm fhm,f gm,",
+      "lastname": "cfgmfgm",
+      "city": "d mntfgmghm",
+      "pincode": "fgmfmndf",
+      "mobileNo": "fggm5165",
+      "id": 5
+    },
+    {
+      "firstname": "bfxb",
+      "lastname": "fbfb",
+      "city": "fcbfc",
+      "pincode": "bfcbf",
+      "mobileNo": "bfb",
+      "id": 6
+    },
+    {
+      "firstname": "fbdfb",
+      "lastname": "fdbdf",
+      "city": "bdfbd",
+      "pincode": "fbfdbd",
+      "mobileNo": "fbdfb",
+      "id": 7
+    },
+    {
+      "firstname": "bdb",
+      "lastname": "zdbdb",
+      "city": "dsb",
+      "pincode": "bdb",
+      "mobileNo": "sdbsdb",
+      "id": 8
+    }
+  ]
+}

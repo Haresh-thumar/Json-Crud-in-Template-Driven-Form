@@ -1,0 +1,70 @@
+<div class="d-flex justify-content-center mt-3 mb-4">
+  <div>
+    <h4 class="mb-3">Json CRUD in Template-Driven Form</h4>
+    <div class="card" style="width: 25rem;">
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="userDetails.firstname" placeholder="Enter Your First Name">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="userDetails.lastname" placeholder="Enter Your First Name">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Ciry Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="userDetails.city" placeholder="Enter Your First Name">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Pincode</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="userDetails.pincode" placeholder="Enter Your First Name">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Mobile No.</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="userDetails.mobileNo" placeholder="Enter Your Mobile No.">
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="update?updateData():addUsers()">{{update? 'Update' :'save'}}</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name:</th>
+        <th scope="col">City:</th>
+        <th scope="col">Pincode:</th>
+        <th scope="col">Mobile No:</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of this.userData;let i = index">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.firstname}}</td>
+        <td>{{item.lastname}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.pincode}}</td>
+        <td>{{item.mobileNo}}</td>
+        <td>
+          <button type="button" class="btn btn-success my-2 my" data-toggle="modal" data-target="#EditModel" (click)="filldataUpdate(item)">Edit</button>
+          <button class="btn btn-danger ml-3" (click)="deleteUser(item)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
